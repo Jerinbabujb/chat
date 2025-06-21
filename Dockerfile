@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk
 WORKDIR /app
 
 # Copy the jar file (update with your actual jar file name)
-COPY target/chat.jar app.jar
+COPY target/chat-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port
 EXPOSE 8080
