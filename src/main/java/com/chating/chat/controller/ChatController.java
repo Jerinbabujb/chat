@@ -13,7 +13,10 @@ public class ChatController {
         return message;
         
     }
-  
+   @GetMapping("/")
+    public String rootRedirect() {
+        return "chat";
+    }
     @GetMapping("chat")
     public String chats(){
         return "chat";
